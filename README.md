@@ -14,7 +14,7 @@ If you’re learning or revising HTML, this repo is made for you.
 | ""Media Learning Hub"" | A media-rich hub with audio/video and semantic helper tags. | `<video>`, `<audio>`, `<mark>`, `<kbd>`, `<dfn>`, `<samp>`, `<code>`, `<details>` |
 | ""Tech Thoughts Blog"" | A blog layout using semantic HTML, quotes, notes, and keyboard hints. | `<article>`, `<abbr>`, `<time>`, `<blockquote>`, `<kbd>`, `<dfn>`, `<samp>` |
 | ""Timeline & Map Explorer"" | A visual project with image maps, figures, canvas, SVG, and fallback content. | `<figure>`, `<figcaption>`, `<map>`, `<area>`, `<iframe>`, `<canvas>`, `<svg>`, `<template>`, `<noscript>` |
-##  Learning Approach
+##  Learning Approach-:
 Instead of just reading syntax, I followed this pattern:
 1. ""Studied every tag’s purpose"" from MDN and real-world examples  
    ""Used it in a meaningful way"" inside a small project  
