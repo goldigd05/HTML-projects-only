@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Timeline & Map Explorer</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Web Timeline & Map</h1>
+  </header>
+
+  <main>
+
+    <!-- Web history timeline -->
+    <article>
+      <h2>Web Evolution</h2>
+      <p>The web was born in <time datetime="1989-01-01">1989</time>.</p>
+      <hr>
+
+      <!-- Image with caption (figure element is used for self-contained images/media with a caption) -->
+      <figure>
+        <img src="timeline.jpg" alt="Web Timeline" width="300">
+        <figcaption>The Evolution of the Web from 1989 to now</figcaption>
+      </figure>
+
+      <!-- Using <wbr> to break a long word safely -->
+      <p>Break this long word: anti<wbr>dis<wbr>establish<wbr>ment<wbr>arian<wbr>ism</p>
+    </article>
+
+    <!-- Image Map Navigation -->
+    <section>
+      <h2>Explore the World</h2>
+
+      <!-- Clickable regions on image (image map) -->
+      <img src="world-map.png" usemap="#worldmap" alt="Clickable World Map" width="400">
+
+      <map name="worldmap">
+        <!-- Rectangular clickable area for Europe -->
+        <area shape="rect" coords="50,50,150,150" href="https://en.wikipedia.org/wiki/Europe" target="_blank" alt="Europe">
+
+        <!-- Circular clickable area for Asia -->
+        <area shape="circle" coords="250,100,40" href="https://en.wikipedia.org/wiki/Asia" target="_blank" alt="Asia">
+      </map>
+    </section>
+
+    <!-- Visual Embeds and Graphics -->
+    <section>
+      <h2>Other Visuals</h2>
+
+      <!-- Iframe to embed external website content (like a preview) -->
+      <iframe src="https://example.com" width="300" height="200" title="Example Iframe"></iframe>
+
+      <!-- Canvas (used for drawing with JS, not functional here without script) -->
+      <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000;">
+        Your browser does not support the canvas element.
+      </canvas>
+
+      <!-- SVG shape (vector graphic) -->
+      <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="2" fill="lightblue" />
+      </svg>
+    </section>
+
+    <!-- Template and Fallback Elements -->
+    <section>
+      <h2>Templates & Fallbacks</h2>
+
+      <!-- Template: Hidden until used with JavaScript -->
+      <template id="hiddenMessage">
+        <p>This is hidden template content.</p>
+      </template>
+
+      <!-- Noscript: Fallback for users with JavaScript disabled -->
+      <noscript>
+        <p>JavaScript is disabled in your browser. Some features may not work.</p>
+      </noscript>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Explorer Inc.</p>
+  </footer>
+
+</body>
+
+</html>

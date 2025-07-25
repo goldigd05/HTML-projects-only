@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health & Fitness Tracker</title>
+</head>
+
+<body>
+    <header>
+        <h1 style="text-align: center; text-decoration: underline;">My Health Dashboard</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Daily Stats Table</h2>
+            <table style="width:100%; border:1px solid black; text-align: center; border-collapse: collapse; margin: auto;">
+                <caption>Health Summary Table</caption>
+                <thead>
+                    <tr>
+                        <th colspan="2">Date and Steps</th>
+                        <th colspan="2">Calories and Sleep</th>
+                    </tr>
+                    <tr>
+                        <th>Date</th>
+                        <th>Steps</th>
+                        <th>Calories</th>
+                        <th>Sleep (hrs)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">01-07-2025</td>
+                        <td>2000</td>
+                        <td>200</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>1800</td>
+                        <td>190</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>02-07-2025</td>
+                        <td>2500</td>
+                        <td>220</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>03-07-2025</td>
+                        <td>2100</td>
+                        <td>205</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>04-07-2025</td>
+                        <td>2300</td>
+                        <td>210</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>05-07-2025</td>
+                        <td>2400</td>
+                        <td>215</td>
+                        <td>7.5</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Updated Weekly</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section>
+            <h2>Goals and Progress</h2>
+            <p>Water Consumed: <progress value="8" min="5" max="10"></progress></p>
+            <p>Heart Rate: <meter value="80" min="40" max="200">80 bpm</meter></p>
+        </section>
+
+        <section>
+            <h2>Set Weekly Goals</h2>
+            <form>
+                <fieldset>
+                    <legend>Weekly Fitness Target</legend>
+
+                    <label for="steps">Target Steps Per Day:</label>
+                    <input type="number" id="steps" name="steps"><br><br>
+
+                    <label for="goal">Choose Goal Type:</label>
+                    <select id="goal" name="goal">
+                        <optgroup label="Physical">
+                            <option value="run">Running</option>
+                            <option value="gym">Gym</option>
+                        </optgroup>
+                        <optgroup label="Mental">
+                            <option value="meditation">Meditation</option>
+                            <option value="reading">Reading</option>
+                        </optgroup>
+                    </select><br><br>
+
+                    <label for="tips">Your Motivational Words:</label>
+                    <input list="tipslist" id="tips" name="tips">
+                    <datalist id="tipslist">
+                        <option value="Discipline">
+                        <option value="Consistency">
+                        <option value="Focus">
+                        <option value="Healthy Food">
+                    </datalist><br><br>
+
+                    <p>Result: <output name="result">Pending</output></p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <details>
+            <summary>Non-diet Fitness Advice</summary>
+            <p>If you want to stay alive and eat momos, take care of yourself!</p>
+        </details>
+        <p>&copy; 2025 Health Tracker | <address>contact@healthemail.com</address></p>
+    </footer>
+</body>
+
+</html>

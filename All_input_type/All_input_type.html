@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML Input Types Quiz</title>
+</head>
+
+<body>
+  <h1 style="text-align: center;"><u><b>Welcome to HTML Input Type Notes</b></u></h1>
+
+  <form action="#" method="post">
+    <p><b>Question 1:</b><br>Why do we use HTML?</p>
+    <select name="htmlPurpose" required>
+      <option value="a">To create web pages</option>
+      <option value="b">To design web pages</option>
+      <option value="c">To create websites</option>
+      <option value="d">Use in game development</option>
+    </select>
+
+    <p><b>Question 2:</b><br>Which things help in making a website responsive?</p>
+    <input type="checkbox" name="responsive" value="media" id="media" />
+    <label for="media">Use of Media Queries</label><br>
+    <input type="checkbox" name="responsive" value="viewport" id="viewport" />
+    <label for="viewport">Use of Meta Viewport</label><br>
+    <input type="checkbox" name="responsive" value="semantic" id="semantic" />
+    <label for="semantic">Use of Semantic Tags</label><br>
+    <input type="checkbox" name="responsive" value="none" id="none" />
+    <label for="none">None of the above</label><br>
+
+    <p><b>Question 3:</b><br>Which of the following is a semantic tag in HTML?</p>
+    <input type="radio" name="semanticTag" value="br" id="br" />
+    <label for="br">Br</label><br>
+    <input type="radio" name="semanticTag" value="pre" id="pre" />
+    <label for="pre">Pre</label><br>
+    <input type="radio" name="semanticTag" value="section" id="section" />
+    <label for="section">Section</label><br>
+    <input type="radio" name="semanticTag" value="footer" id="footer" />
+    <label for="footer">Footer</label><br>
+
+    <p><b>Question 4:</b><br>What is the full form of HTML?</p>
+    <input type="text" name="fullform" placeholder="Enter full form here" required>
+
+    <p><b>Question 5:</b><br>Enter your email so we can contact you:</p>
+    <input type="email" name="email" placeholder="abc@gmail.com" required>
+
+    <p><b>Question 6:</b><br>Upload your portfolio (PDF/DOC only):</p>
+    <input type="file" name="portfolio" accept=".pdf,.doc,.docx" required>
+
+    <p><b>Question 7:</b><br>Select your favorite color:</p>
+    <input type="color" name="favoriteColor" value="#ff0000" required>
+
+    <p><b>Question 8:</b><br>Which month were you born?</p>
+    <input type="month" name="birthMonth" required>
+
+    <p><b>Question 9:</b><br>Which date were you born?</p>
+    <input type="date" name="birthDate" required>
+
+    <p><b>Question 10:</b><br>What is the time now?</p>
+    <input type="time" name="currentTime" required>
+
+    <p><b>Question 11:</b><br>Paste your LinkedIn profile link:</p>
+    <input type="url" name="linkedinProfile" placeholder="https://www.linkedin.com/in/yourprofile">
+
+    <p><b>Question 12:</b><br>How satisfied are you with these notes?</p>
+    <input type="range" name="satisfaction" min="0" max="100" value="50" required>
+
+    <p><b>Question 13:</b><br>Enter your WhatsApp number:</p>
+    <input type="tel" name="whatsapp" placeholder="+91-xxxxxxxxxx" pattern="[+][0-9]{2}-[0-9]{10}" required>
+
+    <p><b>Question 14:</b><br>Enter your password:</p>
+    <input type="password" name="password" required>
+
+    <p><b>Question 15:</b><br>How many weeks have you studied Web Dev in 1st year?</p>
+    <input type="week" name="webdevWeek" required>
+
+    <p><b>Question 16:</b><br>When did you complete this quiz?</p>
+    <input type="datetime-local" name="quizCompletion" required>
+
+    <p><b>Question 17:</b><br>What is your age?</p>
+    <input type="number" name="age" min="1" max="100" value="18" required>
+
+    <input type="hidden" name="secretCode" value="12345"><br><br>
+    <input type="submit" value="Submit Quiz"><br><br>
+
+    <input type="reset" value="Reset Quiz">
+  </form>
+</body>
+
+</html>

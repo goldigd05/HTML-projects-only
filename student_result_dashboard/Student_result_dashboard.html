@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Result Dashboard</title>
+</head>
+
+<body>
+
+  <h1 style="text-align: center; text-decoration: underline black;">Student Result Dashboard</h1>
+
+  <table style="width:100%; border:1px solid black; text-align: center; border-collapse: collapse; margin: auto;">
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>Roll No.</th>
+        <th>Student Name</th>
+        <th>Course</th>
+        <th>Branch</th>
+        <th>Year</th>
+        <th>C Programming</th>
+        <th>DSUC</th>
+        <th>Python</th>
+        <th>Percentage</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>25566</td>
+        <td>Goldi</td>
+        <td>B.Tech</td>
+        <td>IoT</td>
+        <td>2nd</td>
+        <td>65</td>
+        <td>65</td>
+        <td>65</td>
+        <td>95</td>
+        <td>A+</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>25567</td>
+        <td>Riya</td>
+        <td>B.Tech</td>
+        <td>CS</td>
+        <td>2nd</td>
+        <td>72</td>
+        <td>80</td>
+        <td>90</td>
+        <td>80.6</td>
+        <td>A</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <details>
+    <summary>Add New Student Result</summary>
+    <form>
+      <label>Roll No: <input type="text" name="roll"></label><br><br>
+      <label>Name: <input type="text" name="name"></label><br><br>
+      <label>Course: <input type="text" name="course"></label><br><br>
+      <label>Branch: <input type="text" name="branch"></label><br><br>
+      <label>Year: <input type="text" name="year"></label><br><br>
+      <label>C Programming: <input type="number" min="0" max="100" name="c"></label><br><br>
+      <label>DSUC: <input type="number" min="0" max="100" name="dsuc"></label><br><br>
+      <label>Python: <input type="number" min="0" max="100" name="python"></label><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </details>
+
+  <details>
+    <summary>View Grade Criteria</summary>
+    <ul>
+      <li>A+ : 90 and Above</li>
+      <li>A : 80 to 89</li>
+      <li>B+ : 70 to 79</li>
+      <li>B : 60 to 69</li>
+      <li>C : 50 to 59</li>
+    </ul>
+
+    <details>
+      <summary>How Percentage is Calculated</summary>
+      <p>(100 × Marks Obtained) / Total Marks</p>
+    </details>
+
+    <iframe width="400" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+      title="YouTube video" allowfullscreen></iframe><br><br>
+
+    <label for="Attendance">Attendance</label>
+    <progress id="Attendance" max="100" value="100">100%</progress><br>
+
+    <label for="Assignment">Assignment Completion</label>
+    <progress id="Assignment" max="100" value="80">80%</progress><br>
+
+    <label for="ExamPreparation">Exam Preparation</label>
+    <progress id="ExamPreparation" max="100" value="50">50%</progress>
+  </details>
+
+  <footer>
+    <h3 style="text-align: center;">I am Goldi and this dashboard helps students see their result.</h3>
+    <h5 style="text-align: center;">If anyone wants to contact, just mail me at abc@gmail.com</h5>
+  </footer>
+
+</body>
+
+</html>
